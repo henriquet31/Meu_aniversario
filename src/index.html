@@ -3,12 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meu aniversário</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/main.scss">
 </head>
 <body>
-    <h1>olá</h1>
-    <img src="./images/aniversario.jpg" alt="">
+    <header class="hero">
+        <div class="container">
+            <p class="hero__text">
+                Meu aniversário acontece em <br> <span id="contador"></span>
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Minha casa, Rua Exemplo, 123
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        02/09/2025
+                    </li>
+                </ul>
+                <a href="#" class="button">
+                    Garanta seu convite
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="event event--aniversario">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Meu aniversário</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit maxime dicta maiores et voluptas perspiciatis voluptatum illum cum molestiae quia commodi voluptate magni laboriosam dolores, vel minus architecto fugit. Deserunt.
+                </p>
+            </div>
+            <img class="event__image" src="./images/minha_foto.jpg" alt="minha foto">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
